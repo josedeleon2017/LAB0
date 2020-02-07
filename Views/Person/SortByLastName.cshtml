@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<LAB0_0.Models.PersonModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "SortByLastName";
 }
 
 <h2>LISTADO DE CLIENTES</h2>
@@ -14,7 +14,6 @@
         </td>
     </tr>
 </table>
-
 <br />
 
 <table class="table">
@@ -25,14 +24,13 @@
         <th>@Html.DisplayNameFor(model => model.Description)</th>
     </tr>
 
-@foreach (var item in Model) {
+    @foreach (var item in Model)
+    {
 <tr>
     <td>@Html.DisplayFor(modelItem => item.Name)</td>
     <td>@Html.DisplayFor(modelItem => item.LastName)</td>
     <td>@Html.DisplayFor(modelItem => item.Phone)</td>
     <td>@Html.DisplayFor(modelItem => item.Description)</td>
-
-
 
     <td>
         @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
@@ -40,6 +38,6 @@
         @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
     </td>
 </tr>
-}
+    }
 
 </table>

@@ -20,7 +20,7 @@ namespace LAB0_0.Helpers
         }
 
         public List<PersonModel> personList = new List<PersonModel>();
-        public string Name = "";
+       
 
     }
 }

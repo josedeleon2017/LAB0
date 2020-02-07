@@ -167,8 +167,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Person\Create.cshtml" />
     <Content Include="Views\Person\Index.cshtml" />
-    <Content Include="Views\Person\OrderName.cshtml" />
-    <Content Include="Views\Person\OrderLastName.cshtml" />
+    <Content Include="Views\Person\SortByName.cshtml" />
+    <Content Include="Views\Person\SortByLastName.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

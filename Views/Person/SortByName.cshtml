@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<LAB0_0.Models.PersonModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "SortByName";
 }
 
 <h2>LISTADO DE CLIENTES</h2>
@@ -9,12 +9,11 @@
     <tr>
         <td>
             @Html.ActionLink("Create New", "Create")
-            |  @Html.ActionLink("Sort by name", "SortByName")
+            |  @Html.ActionLink("Sort by name", "SortByName")    
             |  @Html.ActionLink("Sort by last name", "SortByLastName")
         </td>
     </tr>
 </table>
-
 <br />
 
 <table class="table">
@@ -43,3 +42,4 @@
 }
 
 </table>
+
